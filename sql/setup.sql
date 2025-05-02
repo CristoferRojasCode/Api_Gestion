@@ -8,13 +8,15 @@ use VivePuntarenasAzul;
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(50) NOT NULL,
-    clave VARCHAR(255) NOT NULL
+    clave VARCHAR(255) NOT NULL,
+    estado VARCHAR(20) DEFAULT 'Activo'
 );
 
 CREATE TABLE galeria (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(100),
     categoria VARCHAR(50),
+    descripcion VARCHAR(255),
     archivo VARCHAR(255)
 );
 

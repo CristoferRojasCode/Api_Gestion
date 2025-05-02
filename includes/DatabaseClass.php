@@ -2,7 +2,7 @@
 <?php
     class Database {
         private $host = "localhost";
-        private $db_name = "nombre_de_tu_base";
+        private $db_name = "gestion";
         private $username = "root";
         private $password = "";
         public $conn;

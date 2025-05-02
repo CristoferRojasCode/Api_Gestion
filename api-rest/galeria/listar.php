@@ -13,7 +13,8 @@ $result = $galeria->getAll();
 $datos = [];
 
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-    $row['archivo'] = 'http://localhost/tu-proyecto/uploads/' . $row['archivo'];
+    $host = $_SERVER['HTTP_HOST'];
+    $row['archivo'] = 'http://localhost/Api_Gestion/uploads/' . $row['archivo'];
     $datos[] = $row;
 }
 
